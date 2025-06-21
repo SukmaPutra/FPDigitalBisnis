@@ -2128,12 +2128,6 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
-  .mb-3 {
-    margin-bottom: calc(var(--spacing) * 3);
-  }
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
-  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -2305,10 +2299,6 @@
     width: calc(var(--spacing) * 9);
     height: calc(var(--spacing) * 9);
   }
-  .size-11 {
-    width: calc(var(--spacing) * 11);
-    height: calc(var(--spacing) * 11);
-  }
   .size-12 {
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
@@ -2469,9 +2459,6 @@
   .grow {
     flex-grow: 1;
   }
-  .basis-full {
-    flex-basis: 100%;
-  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -2580,9 +2567,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -3070,15 +3054,6 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-14 {
-    padding-block: calc(var(--spacing) * 14);
-  }
-  .py-16 {
-    padding-block: calc(var(--spacing) * 16);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
@@ -3237,9 +3212,6 @@
   .text-base-content {
     color: var(--color-base-content);
   }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-blue-500 {
     color: var(--color-blue-500);
   }
@@ -3391,11 +3363,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-colors {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -3454,7 +3421,7 @@
       z-index: 1;
     }
   }
-  .hover\:bg-\[\#\#AC8D54\] {
+  .hover\:bg-blue-700 {
     &:hover {
       @media (hover: hover) {
         background-color: ##AC8D54;
@@ -3510,13 +3477,6 @@
       }
     }
   }
-  .hover\:bg-gray-50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-50);
-      }
-    }
-  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -3548,7 +3508,7 @@
       }
     }
   }
-  .hover\:text-\[\#AC8D54\] {
+  .hover\:text-gray-400 {
     &:hover {
       @media (hover: hover) {
         color: #AC8D54;
@@ -3566,13 +3526,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-50);
-      }
-    }
-  }
-  .hover\:text-gray-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-400);
       }
     }
   }
@@ -3644,7 +3597,7 @@
       border-color: var(--color-blue-500);
     }
   }
-  .focus\:border-transparent {
+  .focus\:bg-gray-50 {
     &:focus {
       border-color: transparent;
     }
@@ -3664,27 +3617,9 @@
       background-color: var(--color-blue-700);
     }
   }
-  .focus\:bg-gray-50 {
-    &:focus {
-      background-color: var(--color-gray-50);
-    }
-  }
   .focus\:bg-gray-100 {
     &:focus {
       background-color: var(--color-gray-100);
-    }
-  }
-  .focus\:bg-white\/10 {
-    &:focus {
-      background-color: color-mix(in srgb, #fff 10%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-      }
-    }
-  }
-  .focus\:text-gray-400 {
-    &:focus {
-      color: var(--color-gray-400);
     }
   }
   .focus\:text-gray-500 {
@@ -3697,14 +3632,15 @@
       color: var(--color-gray-600);
     }
   }
-  .focus\:underline {
+  .focus\:opacity-80 {
     &:focus {
       text-decoration-line: underline;
     }
   }
-  .focus\:opacity-80 {
+  .focus\:ring-2 {
     &:focus {
-      opacity: 80%;
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .focus\:ring-2 {
@@ -3738,12 +3674,6 @@
       }
     }
   }
-  .focus\:outline-none {
-    &:focus {
-      --tw-outline-style: none;
-      outline-style: none;
-    }
-  }
   .disabled\:pointer-events-none {
     &:disabled {
       pointer-events: none;
@@ -3754,24 +3684,9 @@
       opacity: 50%;
     }
   }
-  .sm\:order-1 {
+  .sm\:mt-10 {
     @media (width >= 40rem) {
-      order: 1;
-    }
-  }
-  .sm\:order-2 {
-    @media (width >= 40rem) {
-      order: 2;
-    }
-  }
-  .sm\:order-3 {
-    @media (width >= 40rem) {
-      order: 3;
-    }
-  }
-  .sm\:mt-0 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 0);
+      margin-top: calc(var(--spacing) * 10);
     }
   }
   .sm\:mt-10 {
@@ -3784,19 +3699,9 @@
       margin-bottom: calc(var(--spacing) * 10);
     }
   }
-  .sm\:block {
-    @media (width >= 40rem) {
-      display: block;
-    }
-  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
-    }
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
     }
   }
   .sm\:size-11\.5 {
@@ -3805,19 +3710,9 @@
       height: calc(var(--spacing) * 11.5);
     }
   }
-  .sm\:w-auto {
-    @media (width >= 40rem) {
-      width: auto;
-    }
-  }
   .sm\:grow-0 {
     @media (width >= 40rem) {
-      flex-grow: 0;
-    }
-  }
-  .sm\:basis-auto {
-    @media (width >= 40rem) {
-      flex-basis: auto;
+      width: auto;
     }
   }
   .sm\:grid-cols-2 {
@@ -3835,19 +3730,27 @@
       flex-direction: row;
     }
   }
-  .sm\:flex-nowrap {
+  .sm\:space-y-4 {
     @media (width >= 40rem) {
-      flex-wrap: nowrap;
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+      }
     }
   }
-  .sm\:items-center {
+  .sm\:space-y-8 {
     @media (width >= 40rem) {
-      align-items: center;
+      :where(& > :not(:last-child)) {
+        --tw-space-y-reverse: 0;
+        margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+      }
     }
   }
-  .sm\:justify-start {
+  .sm\:gap-x-8 {
     @media (width >= 40rem) {
-      justify-content: flex-start;
+      column-gap: calc(var(--spacing) * 8);
     }
   }
   .sm\:space-y-4 {
@@ -3878,14 +3781,14 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
-  .sm\:py-2 {
+  .sm\:ps-5 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 2);
     }
   }
-  .sm\:ps-5 {
+  .sm\:pl-10 {
     @media (width >= 40rem) {
-      padding-inline-start: calc(var(--spacing) * 5);
+      padding-left: calc(var(--spacing) * 10);
     }
   }
   .sm\:pl-10 {
@@ -4221,9 +4124,9 @@
       background-color: var(--color-neutral-950);
     }
   }
-  .dark\:bg-transparent {
+  .dark\:bg-white {
     @media (prefers-color-scheme: dark) {
-      background-color: transparent;
+      background-color: var(--color-white);
     }
   }
   .dark\:bg-white {
@@ -4281,7 +4184,7 @@
       color: var(--color-white);
     }
   }
-  .dark\:placeholder-neutral-500 {
+  .dark\:hover\:bg-neutral-700 {
     @media (prefers-color-scheme: dark) {
       &::placeholder {
         color: var(--color-neutral-500);
@@ -4297,32 +4200,11 @@
       }
     }
   }
-  .dark\:hover\:bg-neutral-700 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-neutral-700);
-        }
-      }
-    }
-  }
   .dark\:hover\:bg-neutral-800 {
     @media (prefers-color-scheme: dark) {
       &:hover {
         @media (hover: hover) {
           background-color: var(--color-neutral-800);
-        }
-      }
-    }
-  }
-  .dark\:hover\:bg-white\/10 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: color-mix(in srgb, #fff 10%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-          }
         }
       }
     }
@@ -4354,36 +4236,10 @@
       }
     }
   }
-  .dark\:hover\:text-neutral-500 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-neutral-500);
-        }
-      }
-    }
-  }
-  .dark\:focus\:bg-neutral-700 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        background-color: var(--color-neutral-700);
-      }
-    }
-  }
   .dark\:focus\:bg-neutral-800 {
     @media (prefers-color-scheme: dark) {
       &:focus {
         background-color: var(--color-neutral-800);
-      }
-    }
-  }
-  .dark\:focus\:bg-white\/10 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        background-color: color-mix(in srgb, #fff 10%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-        }
       }
     }
   }
@@ -4399,41 +4255,6 @@
       &:focus {
         color: var(--color-neutral-400);
       }
-    }
-  }
-  .dark\:focus\:text-neutral-500 {
-    @media (prefers-color-scheme: dark) {
-      &:focus {
-        color: var(--color-neutral-500);
-      }
-    }
-  }
-  .hs-collapse-open\:block {
-    &.hs-collapse.open {
-      display: block;
-    }
-    &.hs-collapse-toggle.open {
-      display: block;
-    }
-    .hs-collapse.open & {
-      display: block;
-    }
-    .hs-collapse-toggle.open & {
-      display: block;
-    }
-  }
-  .hs-collapse-open\:hidden {
-    &.hs-collapse.open {
-      display: none;
-    }
-    &.hs-collapse-toggle.open {
-      display: none;
-    }
-    .hs-collapse.open & {
-      display: none;
-    }
-    .hs-collapse-toggle.open & {
-      display: none;
     }
   }
   .hs-selected\:block {
