@@ -9,78 +9,54 @@
   </head>
   <body>
     <!-- 1. Navbar -->
-    <header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 dark:bg-neutral-800">
-      <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-        <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-hidden focus:opacity-80" href="#">Arrvent Work </a>
-        <div class="sm:order-3 flex items-center gap-x-2">
-          <button
-            type="button"
-            class="sm:hidden hs-collapse-toggle relative size-9 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-            id="hs-navbar-alignment-collapse"
-            aria-expanded="false"
-            aria-controls="hs-navbar-alignment"
-            aria-label="Toggle navigation"
-            data-hs-collapse="#hs-navbar-alignment"
-          >
-            <svg
-              class="hs-collapse-open:hidden shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-            <svg
-              class="hs-collapse-open:block hidden shrink-0 size-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-            <span class="sr-only">Toggle</span>
-          </button>
-          <button
-            type="button"
-            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-          >
-            Button
-          </button>
+    <!-- Navbar -->
+    <header class="absolute top-0 left-0 w-full z-50 bg-white/0">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between text-white text-sm font-medium">
+        <!-- Kiri: Design & Build -->
+        <div class="flex-none">
+          <span class="text-lg">Design & Build</span>
         </div>
-        <div id="hs-navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2" aria-labelledby="hs-navbar-alignment-collapse">
-          <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-            <a class="font-medium text-blue-500 focus:outline-hidden" href="#" aria-current="page">Home</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">About</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Service</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Project</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Testimoni</a>
-          </div>
+
+        <!-- Tengah: Logo / Brand -->
+        <div class="flex items-center space-x-1">
+          <span class="text-[#AC8D54] font-bold text-base">AW</span>
+          <span class="font-bold text-2xl">Arrvent Works</span>
         </div>
+
+        <!-- Kanan: Kontak -->
+        <div class="flex items-center space-x-2">
+          <!-- Icon Telepon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+            <path
+              fill-rule="evenodd"
+              d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="text-sm">+628570091874</span>
+        </div>
+      </div>
+
+      <!-- Menu Navigasi -->
+      <nav class="border-t-2 mx-20 border-white pt-3 pb-2 flex justify-center space-x-6 text-white text-xs font-semibold uppercase">
+        <a href="#" class="text-[#AC8D54] hover:text-gray-50">Home</a>
+        <a href="#" class="hover:text-[#AC8D54]">About</a>
+        <a href="#" class="hover:text-[#AC8D54]">Service</a>
+        <a href="#" class="hover:text-[#AC8D54]">Project</a>
+        <a href="#" class="hover:text-[#AC8D54]">Testimoni</a>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <div class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/images/bg-hero.jpg')">
+    <div class="relative bg-cover bg-center bg-no-repeat min-h-screen" style="background-image: url('./assets/images/bg-hero.jpg')">
+      <!-- Overlay -->
       <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24 space-y-8 pl-4 sm:pl-10">
         <!-- Announcement Banner -->
         <div class="flex justify-center">
-          <a class="group inline-flex items-center bg-white/10 hover:bg-white/10 border border-white/10 p-1 ps-4 rounded-full shadow-md focus:outline-hidden focus:bg-white/10" href="#">
+          <a class="group inline-flex items-center bg-white/10 hover:bg-white/10 border border-white/10 p-1 ps-4 rounded-full shadow-md" href="#">
             <p class="me-2 text-white text-sm">Arsitektur & Desain Interior</p>
             <span class="group-hover:bg-white/10 py-1.5 px-2.5 flex justify-center items-center gap-x-2 rounded-full bg-white/10 font-semibold text-white text-sm">
               <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7" /></svg>
@@ -89,42 +65,108 @@
         </div>
 
         <!-- Title -->
-        <div class="max-w-3xl text-center mx-auto">
-          <h1 class="block font-medium text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Wujudkan Rumah Impian yang Estetik dan Tepat Anggaran</h1>
+        <div class="max-w-3xl text-left">
+          <h1 class="block font-medium text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Wujudkan <span class="text-[#AC8D54]">Rumah Impian</span> yang Estetik dan Tepat Anggaran</h1>
         </div>
 
-        <div class="max-w-3xl text-center mx-auto">
-          <p class="text-lg text-white/70">Kami hadir untuk membantu Anda membangun atau merenovasi rumah dengan desain profesional, sesuai kebutuhan dan kepribadian Anda.</p>
+        <!-- Description -->
+        <div class="max-w-3xl text-left">
+          <p class="text-lg text-white/70 mt-4">Kami hadir untuk membantu Anda membangun atau merenovasi rumah dengan desain profesional, sesuai kebutuhan dan kepribadian Anda.</p>
         </div>
 
         <!-- CTA Button -->
-        <div class="text-center">
+        <div class="text-left">
           <a
-            class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tr from-blue-600 to-violet-600 shadow-lg hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none py-3 px-6"
+            class="inline-flex justify-center items-center gap-x-3 bg-gradient-to-tr from-[#704902] to-[#d89e31] shadow-lg hover:shadow-[#AC8D54] border border-transparent text-white text-sm font-medium rounded-full py-3 px-6 mt-6"
             href="#"
           >
             Konsultasi gratis
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7" /></svg>
+            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
       </div>
     </div>
 
     <!-- 3. About -->
-    <section id="about"></section>
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Grid -->
+      <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+        <div>
+          <img class="rounded-xl" src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80" alt="Features Image" />
+        </div>
+        <!-- End Col -->
+
+        <div class="mt-5 sm:mt-10 lg:mt-0">
+          <div class="space-y-6 sm:space-y-8">
+            <!-- Title -->
+            <div class="space-y-2 md:space-y-4">
+              <h1 class="text-5xl uppercase tracking-widest text-[#AC8D54] font-semibold">ARRVENT WORK</h1>
+              <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">Kami Membantu Mewujudkan Desain Impian Anda</h2>
+              <p class="text-gray-500 dark:text-neutral-500">
+                Sebagai mitra profesional dalam dunia arsitektur dan desain interior, kami memahami tantangan yang dihadapi oleh pemilik rumah, bisnis, maupun proyek properti. Dengan pengalaman dan kreativitas, kami menghadirkan solusi
+                desain yang estetis, fungsional, dan sesuai anggaran.
+              </p>
+            </div>
+            <!-- End Title -->
+
+            <!-- List -->
+            <ul class="space-y-2 sm:space-y-4">
+              <li class="flex gap-x-3">
+                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-[#AC8D54] dark:bg-[#AC8D54]/30 dark:text-[#AC8D54]">
+                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div class="grow">
+                  <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"> <span class="font-bold">Desain Estetis </span> & Fungsional </span>
+                </div>
+              </li>
+
+              <li class="flex gap-x-3">
+                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-[#AC8D54] dark:bg-blue-800/30 dark:text-[#AC8D54]">
+                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div class="grow">
+                  <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"> Konsultasi Profesional &<span class="font-bold"> Personal</span> </span>
+                </div>
+              </li>
+
+              <li class="flex gap-x-3">
+                <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-[#AC8D54] dark:bg-blue-800/30 dark:text-[#AC8D54]">
+                  <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div class="grow">
+                  <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500"> Proses Cepat dan Transparan </span>
+                </div>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Features -->
     <!-- End About -->
 
     <!-- 4. Layanan -->
-    <div class="pt-10 pb-10" style="background-color: #f5f1e5">
-      <!-- Title -->
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Our Service</h2>
-        <p class="mt-2 text-gray-600 dark:text-neutral-400">Layanan Kami Untuk mewujudkan Ruang Yang Anda Impikan.</p>
+    <section id="layanan" class="py-16 bg-white dark:bg-neutral-900">
+      <!-- Header -->
+      <div class="text-center mb-10 px-4">
+        <h2 class="font-bold text-4xl lg:text-5xl text-gray-800 dark:text-neutral-200">Our Service</h2>
+        <p class="mt-2 text-gray-600 dark:text-neutral-400">Berikut Merupakan Layanan Kami Untuk Mewujudkan Ruang Yang Anda Impikan</p>
       </div>
-      <!-- End Title -->
 
-      <!-- Feature -->
-      <div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+      <!-- Feature Image with Card -->
+      <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto mb-16">
         <div
           class="min-h-[35vh] md:min-h-[75vh] bg-[url('https://images.unsplash.com/photo-1665686374006-b8f04cf62d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1020&q=80')] bg-center bg-cover bg-no-repeat relative rounded-xl"
         >
@@ -132,13 +174,12 @@
             <!-- Card -->
             <div class="px-5 py-4 inline-block bg-white rounded-lg md:p-7 dark:bg-neutral-800">
               <div class="hidden md:block">
-                <h3 class="text-lg font-bold text-gray-800 sm:text-2xl dark:text-neutral-200">How does Preline work?</h3>
-                <p class="mt-2 text-gray-800 dark:text-neutral-200">Learn more about Preline.</p>
+                <h3 class="text-lg font-bold text-gray-800 sm:text-2xl dark:text-neutral-200">Bagaimana kami bekerja ?</h3>
+                <p class="mt-2 text-gray-800 dark:text-neutral-200">Simak video berikut.</p>
               </div>
-
               <div class="md:mt-16">
-                <a class="flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-white dark:hover:text-neutral-400 dark:focus:text-neutral-400" href="#">
-                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <a href="#" class="flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500 focus:outline-hidden dark:text-white dark:hover:text-neutral-400">
+                  <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="5 3 19 12 5 21 5 3" />
                   </svg>
                   Watch our story
@@ -149,124 +190,77 @@
           </div>
         </div>
       </div>
-      <!-- End Features -->
 
-      <!-- Icon Blocks -->
-      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
-          <!-- Icon Block -->
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-neutral-800 dark:border-neutral-700">
-              <svg
-                class="shrink-0 size-5 text-gray-600 dark:text-neutral-400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect width="10" height="14" x="3" y="8" rx="2" />
-                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                <path d="M8 18h.01" />
+      <!-- Services Grid -->
+      <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service 1 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm dark:bg-neutral-800">
+            <div class="mb-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5H15v-18a.75.75 0 0 0 0-1.5H3ZM6.75 19.5v-2.25a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75ZM6 6.75A.75.75 0 0 1 6.75 6h.75a.75.75 0 0 1 0 1.5h-.75A.75.75 0 0 1 6 6.75ZM6.75 9a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM6 12.75a.75.75 0 0 1 .75-.75h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 6a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75Zm-.75 3.75A.75.75 0 0 1 10.5 9h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 12a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM16.5 6.75v15h5.25a.75.75 0 0 0 0-1.5H21v-12a.75.75 0 0 0 0-1.5h-4.5Zm1.5 4.5a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Zm.75 2.25a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75h-.008ZM18 17.25a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Desain Ruang komersial</h3>
-              <p class="mt-1 text-gray-600 dark:text-neutral-400">Perencanaan tata ruang & tampilan visual untuk toko, kafe, atau kantor agar fungsional dan menarik.</p>
-            </div>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Desain Ruang Komersial</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Perencanaan tata ruang dan tampilan visual untuk toko, kafe, kantor, atau ruang usaha agar fungsional dan menarik.</p>
           </div>
-          <!-- End Icon Block -->
 
-          <!-- Icon Block -->
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-neutral-800 dark:border-neutral-700">
-              <svg
-                class="shrink-0 size-5 text-gray-600 dark:text-neutral-400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M20 7h-9" />
-                <path d="M14 17H5" />
-                <circle cx="17" cy="17" r="3" />
-                <circle cx="7" cy="7" r="3" />
+          <!-- Service 2 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm dark:bg-neutral-800">
+            <div class="mb-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9">
+                <path d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Interior & Furniture Design</h3>
-              <p class="mt-1 text-gray-600 dark:text-neutral-400">Desain interior hingga perabotan custom yang sesuai gaya, fungsi, dan kebutuhan ruang klien.</p>
-            </div>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Interior & Furniture Design</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Desain interior menyeluruh hingga perabotan custom yang sesuai gaya, fungsi, dan kebutuhan ruang klien.</p>
           </div>
-          <!-- End Icon Block -->
 
-          <!-- Icon Block -->
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-neutral-800 dark:border-neutral-700">
-              <svg
-                class="shrink-0 size-5 text-gray-600 dark:text-neutral-400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          <!-- Service 3 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm dark:bg-neutral-800">
+            <div class="mb-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path
+                  d="M18.75 12.75h1.5a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM12 6a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 6ZM12 18a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 12 18ZM3.75 6.75h1.5a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5ZM5.25 18.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 0 1.5ZM3 12a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 3 12ZM9 3.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM12.75 12a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0ZM9 15.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
+                />
               </svg>
             </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Jasa Styling & Dekorasi</h3>
-              <p class="mt-1 text-gray-600 dark:text-neutral-400">Penataan ruang dengan elemen dekoratif untuk menciptakan kesan yang estetis, dan harmonis.</p>
-            </div>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Jasa Styling & Dekorasi</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Penataan akhir ruang dengan elemen dekoratif untuk menciptakan kesan yang estetik, harmonis, dan berkarakter.</p>
           </div>
-          <!-- End Icon Block -->
 
-          <!-- Icon Block -->
-          <div class="text-center">
-            <div class="flex justify-center items-center size-12 bg-gray-50 border border-gray-200 rounded-full mx-auto dark:bg-neutral-800 dark:border-neutral-700">
-              <svg
-                class="shrink-0 size-5 text-gray-600 dark:text-neutral-400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
-                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+          <!-- Service 4 -->
+          <div class="bg-white rounded-lg p-6 text-center shadow-sm dark:bg-neutral-800">
+            <div class="mb-4 flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9">
+                <path
+                  d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Cost Estimation (RAB)</h3>
-              <p class="mt-1 text-gray-600 dark:text-neutral-400">Layanan penyusunan RAB rinci & efisien untuk perencanaan anggaran pembangunan dan desain.</p>
-            </div>
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Cost Estimation (RAB)</h3>
+            <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">Layanan penyusunan RAB secara rinci dan efisien untuk mendukung perencanaan anggaran pembangunan dan desain.</p>
           </div>
-          <!-- End Icon Block -->
         </div>
       </div>
-      <!-- End Icon Blocks -->
-    </div>
+    </section>
 
     <!-- 5. Proyek -->
-    <div class="bg-base-200 pt-10">
+    <div class="bg-base- pt-10">
       <!-- Title -->
       <div class="max-w-2xl mx-auto text-center mb-1 lg:mb-7">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Our Project</h2>
@@ -340,14 +334,16 @@
     <!-- End Proyek -->
 
     <!-- 6. Testimoni -->
-    <div class="overflow-hidden bg-gray-800 dark:bg-neutral-950" style="background-color: #605c53">
-      <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <!-- Title -->
-        <div class="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">Loved by business and individuals across the globe</h2>
+    <div class="overflow-hidden bg-[#AC8D54] dark:bg-neutral-950">
+      <div class="relative max-w-[85rem] px-4 py-5 sm:px-6 lg:px-8 lg:py-10 mx-auto">
+        <div class="max-w-4xl mx-auto py-10 text-center px-4 sm:px-6 lg:px-10">
+          <!-- Title -->
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white dark:text-white mb-2">Karena Kepuasan Klien adalah Prioritas Kami</h2>
+          <p class="text-sm sm:text-base text-white dark:text-neutral-400 max-w-xl mx-auto">
+            Kami telah membantu puluhan-ratusan keluarga dan pemilik usaha mewujudkan ruang impian mereka.<br />
+            Berikut adalah cerita mereka setelah bekerja bersama Arrvent Work.
+          </p>
         </div>
-        <!-- End Title -->
-
         <!-- Grid -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
@@ -355,7 +351,7 @@
             <div class="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
               <div class="flex-auto p-4 md:p-6">
                 <p class="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
-                  " With Preline, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience. "
+                  “Saya sangat puas dengan hasil desain interior dari Arrvent Work. Timnya komunikatif, profesional, dan hasil akhirnya persis seperti yang saya bayangkan—bahkan lebih!”
                 </p>
               </div>
 
@@ -370,7 +366,7 @@
                   </div>
 
                   <div class="grow">
-                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Josh Tyson</p>
+                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Bena Mahoraga</p>
                     <p class="text-xs text-gray-500 dark:text-neutral-400">Product Manager | Capsule</p>
                   </div>
                 </div>
@@ -399,7 +395,7 @@
                   </div>
 
                   <div class="grow">
-                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Luisa</p>
+                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Faisal Ramadhan</p>
                     <p class="text-xs text-gray-500 dark:text-neutral-400">Senior Director of Operations | Fitbit</p>
                   </div>
                 </div>
@@ -428,7 +424,7 @@
                   </div>
 
                   <div class="grow">
-                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Alisa Williams</p>
+                    <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">Nicodemos</p>
                     <p class="text-xs text-gray-500 dark:text-neutral-400">Entrepreneur | Happy customer</p>
                   </div>
                 </div>
@@ -444,18 +440,63 @@
     <!-- End Testimoni -->
 
     <!-- 7. Konsultasi CTA -->
-    <section id="kontak"></section>
+    <div class="relative max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Input -->
+      <form>
+        <div class="p-1.5 flex flex-col sm:flex-row items-center gap-2 border border-gray-300 rounded-lg dark:border-neutral-700">
+          <div class="relative w-full">
+            <label for="hero-input" class="sr-only">Subscribe</label>
+            <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3">
+              <svg
+                class="shrink-0 size-4 text-gray-400 dark:text-neutral-600"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="hero-input"
+              name="hero-input"
+              class="py-1.5 sm:py-2 ps-9 pe-3 block w-full border-transparent rounded-lg sm:text-sm focus:border-transparent focus:ring-transparent disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:text-neutral-400 dark:placeholder-neutral-500"
+              placeholder="Enter your email"
+            />
+          </div>
+          <a
+            class="w-full sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-[#AC8D54] text-white hover:bg-[#78694d] focus:outline-hidden focus:bg-[#42341b] disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
+            href="#"
+          >
+            Join
+            <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <p class="mt-2 text-xs text-gray-500 dark:text-neutral-500">No spam, unsubscribe at any time.</p>
+      </form>
+      <!-- End Input -->
+    </div>
 
     <!-- 8. Footer -->
-    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 mt-10">
+    <footer class="footer footer-horizontal footer-center bg-[#2C2C2C] text-base-content rounded p-10 mt-10">
       <nav class="grid grid-flow-col gap-4">
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
+        <a class="link text-white link-hover">About us</a>
+        <a class="link text-white link-hover">Contact</a>
+        <a class="link text-white link-hover">Jobs</a>
+        <a class="link text-white link-hover">Press kit</a>
       </nav>
       <nav>
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid grid-flow-col gap-4 text-white">
           <a>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
               <path
@@ -478,7 +519,7 @@
         </div>
       </nav>
       <aside>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        <p class="text-white">Copyright © 2025 Yogyakarta Inc - All right reserved by ACME Industries Ltd</p>
       </aside>
     </footer>
     <!-- End Footer -->
